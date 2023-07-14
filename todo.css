@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+
+}
+
+.header{
+    background-color: #f44336;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+#form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px auto;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+}
+
+#taskInput{
+    display: block;
+    width: max(50%, 200px);
+    padding: 15px;
+
+    margin: 5px 0 22px 0;
+    border: none;
+    background:#ddd;
+}
+#taskInput:focus {
+    background-color: #ddd;
+    outline: none;
+}
+#submitButton {
+    display: block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    cursor: pointer;
+    width: max(50%, 200px);
+    opacity: 0.9;
+}
+
+#submitButton:hover {
+    opacity: 1;
+}
+.ul-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px auto;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    list-style-type: none;
+}
+.ul-wrapper> li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+
+}
+.ul-wrapper> li> span {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: auto;
+}
+.ul-wrapper> li> button.delete {
+    background-color: #f44336;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.ul-wrapper> li> input.Completed {
+    background-color: #46d819;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ul> li> input {
+    height: 1.1rem;
+    width: 1.1rem;
+    margin-right: 5px;
+}
+
+ul> li> input:checked {
+    height: 1.1rem;
+    width:1.1rem;
+    background-color: #4CAF50;
+    color: #4CAF50
+}
